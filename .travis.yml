@@ -2,6 +2,6 @@ language: r
 cache: packages
 warnings_are_errors: false
 install:
-  - Rscript -e 'install.packages(c("devtools","roxygen2","testthat"));devtools::install_deps("RPackage")'
+  - Rscript -e 'install.packages(c("devtools","roxygen2","testthat"));devtools::install_deps("knapsack")'
 script:
-  - Rscript -e 'devtools::check("RPackage")'
+  - Rscript -e 'devtools::check("knapsack")'
