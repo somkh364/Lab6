@@ -1,8 +1,7 @@
 Package: knapsack
 Type: Package
-Title: The package contains 3 different functions for solving knapsack problem.
+Title: Three approach to a knapsack problem
 Version: 1.0
-Date: 2017-10-06
 Authors@R: c(
     person("Somaya", "Khoda Bakhsh", email = "somkh364@student.liu.se", role = "cre"),
     person("Thi", "Phalm", email = "Thiph169@student.liu.se", role = "aut"))
