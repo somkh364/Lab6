@@ -9,7 +9,7 @@
 #' @export
 #'
 
-brute_force_knapsack_parallel <- function(x,W, parallel = TRUE){
+brute_force_knapsack_parallel <- function(x,W, parallel = TRUE, fast = FALSE){
  suppressMessages(requireNAMESPACE(combinat, quietly = TRUE))
   suppressMessages(requireNAMESPACE(parallel, quietly = TRUE))
   
