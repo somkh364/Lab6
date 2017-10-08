@@ -10,8 +10,8 @@
 #'
 
 brute_force_knapsack_parallel <- function(x,W, parallel = TRUE){
-  suppressMessages(require(combinat, quietly = TRUE))
-  suppressMessages(require(parallel, quietly = TRUE))
+ suppressMessages(requireNAMESPACE(combinat, quietly = TRUE))
+  suppressMessages(requireNAMESPACE(parallel, quietly = TRUE))
   
   if(!is.data.frame(x)){
     stop("x must be a data.frame")
