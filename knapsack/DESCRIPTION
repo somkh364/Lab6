@@ -14,5 +14,7 @@ LazyData: true
 Imports: stats,
     Rcpp,
     utils,
-    rbenchmark
+    rbenchmark,
+     combinat,
+    parallel
 Suggests: testthat
