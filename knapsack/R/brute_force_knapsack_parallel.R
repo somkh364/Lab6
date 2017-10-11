@@ -2,17 +2,18 @@
 #'
 #' @param x data frame with two columns \code{w} (weight) and \code{v} (value) of items to place in the knapsack #' 
 #' @param W the maximum weight (numeric) the knapsack can hold
-#' 
+#' @param parallel parallel 
+#' @param combinat combinat
 #' @param fast whether to use the rcpp optimization
 #'
 #' @return theoretical maximum \code{$value} (knapsack value) composed of \code{$elements} (which items) #' 
 #' @export
 #'
 
-brute_force_knapsack_parallel <- function(x,W, parallel = TRUE, fast = FALSE){
- suppressMessages(requireNAMESPACE(combinat, quietly = TRUE))
-  suppressMessages(requireNAMESPACE(parallel, quietly = TRUE))
-  
+brute_force_knapsack_parallel <- function(x,W, combinat = TRUE, parallel = TRUE, fast = FALSE){
+  requireNamespace(combinat, quietly = TRUE)
+  requireNamespace(parallel, quietly = TRUE)
+
   if(!is.data.frame(x)){
     stop("x must be a data.frame")
   }
